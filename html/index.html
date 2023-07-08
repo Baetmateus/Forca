@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Jogo da forca</title>
+  </head>
+  <body>
+    <header>
+      <div class="escolha">
+        <button class="dificuldade" id="facil">Facil</button>
+        <button class="dificuldade" id="media">Media</button>
+        <button class="dificuldade" id="dificil">Dificil</button>
+      </div>
+      <h1>Forca</h1>
+    </header>
+    <div class="container">
+      <button class="btnGerar" id="gerar">Gerar Palavra</button>
+      <div class="adivinhar">
+        <input type="text" id="guess" />
+        <button class="btnAdivinha" id="btnAdivinha">Adivinhar</button>
+      </div>
+      <div class="forca">
+        <div class="horizontal"></div>
+        <div class="vertical2"></div>
+        <div class="vertical"></div>
+        <div class="horizontal2"></div>
+      </div>
+      <div class="stickman">
+        <div class="head" id="head"></div>
+        <div class="body" id="body"></div>
+        <div class="arms">
+          <div class="left-arm" id="left-arm"></div>
+          <div class="right-arm" id="right-arm"></div>
+        </div>
+        <div class="legs">
+          <div class="left-leg" id="left-leg"></div>
+          <div class="right-leg" id="right-leg"></div>
+        </div>
+      </div>
+      <div class="palavra" id="palavra">
+      </div>
+      <div class="erradas" id="erradas">
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="https://unpkg.com/unidecode/dist/unidecode.min.js"></script>
+  </body>
+</html>
